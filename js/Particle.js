@@ -3,8 +3,8 @@ class Particle {
         var options = {
             restitution : 0.2
         }
-
-        this.body  = Bodies.circle(x, y,radius,options);       
+        this.radius = radius;
+        this.body  = Bodies.circle(x, y,radius,options);  
         this.color = fill(random(0, 255), random(0, 255), random(0, 255));
         World.add(world, this.body);
 
